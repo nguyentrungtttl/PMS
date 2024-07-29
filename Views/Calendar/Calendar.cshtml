@@ -1,0 +1,31 @@
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="~/css/Calendar.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+</head>
+
+<body>
+     <div class="comeback">
+            <button>
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="title">Previous</span>
+            </button>
+            <button>
+                <i class="fa-solid fa-arrow-right"></i>
+                <span class="title">Next</span>
+            </button>
+        </div>
+    <div id="calendar"></div>
+</body>
+<script src="~/js/Calendar.js"></script>
+<script src="luxon.js"></script>
+
+</html>
