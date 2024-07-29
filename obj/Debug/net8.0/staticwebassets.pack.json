@@ -1,20 +1,24 @@
 {
   "Files": [
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\css\\Detail.css",
-      "PackagePath": "staticwebassets\\css\\Detail.css"
+      "Id": "/Users/user/Documents/PMS/wwwroot/css/Calendar.css",
+      "PackagePath": "staticwebassets/css/Calendar.css"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\css\\GeneralForm.css",
-      "PackagePath": "staticwebassets\\css\\GeneralForm.css"
+      "Id": "/Users/user/Documents/PMS/wwwroot/css/Detail.css",
+      "PackagePath": "staticwebassets/css/Detail.css"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\css\\Home.css",
-      "PackagePath": "staticwebassets\\css\\Home.css"
+      "Id": "/Users/user/Documents/PMS/wwwroot/css/GeneralForm.css",
+      "PackagePath": "staticwebassets/css/GeneralForm.css"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\css\\SpecialCreate.css",
-      "PackagePath": "staticwebassets\\css\\SpecialCreate.css"
+      "Id": "/Users/user/Documents/PMS/wwwroot/css/Home.css",
+      "PackagePath": "staticwebassets/css/Home.css"
+    },
+    {
+      "Id": "/Users/user/Documents/PMS/wwwroot/css/SpecialCreate.css",
+      "PackagePath": "staticwebassets/css/SpecialCreate.css"
     },
     {
       "Id": "/Users/user/Documents/PMS/wwwroot/css/UpdateForm.css",
@@ -25,24 +29,24 @@
       "PackagePath": "staticwebassets/images/customer02.jpg"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\images\\logoPMS.png",
-      "PackagePath": "staticwebassets\\images\\logoPMS.png"
+      "Id": "/Users/user/Documents/PMS/wwwroot/images/logoPMS.png",
+      "PackagePath": "staticwebassets/images/logoPMS.png"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\js\\Calendar.js",
-      "PackagePath": "staticwebassets\\js\\Calendar.js"
+      "Id": "/Users/user/Documents/PMS/wwwroot/js/Calendar.js",
+      "PackagePath": "staticwebassets/js/Calendar.js"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\js\\CreateForm.js",
-      "PackagePath": "staticwebassets\\js\\CreateForm.js"
+      "Id": "/Users/user/Documents/PMS/wwwroot/js/CreateForm.js",
+      "PackagePath": "staticwebassets/js/CreateForm.js"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\js\\Detail.js",
-      "PackagePath": "staticwebassets\\js\\Detail.js"
+      "Id": "/Users/user/Documents/PMS/wwwroot/js/Detail.js",
+      "PackagePath": "staticwebassets/js/Detail.js"
     },
     {
-      "Id": "D:\\3Light\\PSM-system\\wwwroot\\js\\Home.js",
-      "PackagePath": "staticwebassets\\js\\Home.js"
+      "Id": "/Users/user/Documents/PMS/wwwroot/js/Home.js",
+      "PackagePath": "staticwebassets/js/Home.js"
     },
     {
       "Id": "/Users/user/Documents/PMS/wwwroot/js/Login.js",
@@ -61,15 +65,15 @@
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HotelManagement.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.HotelManagement.props",
       "PackagePath": "build\\HotelManagement.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HotelManagement.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.HotelManagement.props",
       "PackagePath": "buildMultiTargeting\\HotelManagement.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HotelManagement.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.HotelManagement.props",
       "PackagePath": "buildTransitive\\HotelManagement.props"
     }
   ],

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\3Light\\PSM-system\\HotelManagement.csproj": {}
+    "/Users/user/Documents/PMS/HotelManagement.csproj": {}
   },
   "projects": {
-    "D:\\3Light\\PSM-system\\HotelManagement.csproj": {
+    "/Users/user/Documents/PMS/HotelManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\3Light\\PSM-system\\HotelManagement.csproj",
+        "projectUniqueName": "/Users/user/Documents/PMS/HotelManagement.csproj",
         "projectName": "HotelManagement",
-        "projectPath": "D:\\3Light\\PSM-system\\HotelManagement.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\3Light\\PSM-system\\obj\\",
+        "projectPath": "/Users/user/Documents/PMS/HotelManagement.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Documents/PMS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/user/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
