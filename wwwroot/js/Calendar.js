@@ -57,6 +57,11 @@
 //   }
 // ]
 
+function goBack(){
+  window.history.back();
+}
+
+
 (async function (){
     async function getRoomSaleData(hotelId) {
       const url = `https://api2-pnv.bluejaypos.vn/api/room-sale?hotelId=${hotelId}`;
@@ -311,7 +316,7 @@
                 // Đánh dấu tất cả các ngày trong khoảng thời gian đã chọn
                 // markDateRange(dateStart, dateEnd);
                 // Điều hướng đến trang createForm
-                // window.location.href = "createForm.html"; // Thay đổi đường dẫn theo trang bạn muốn điều hướng đến
+                window.location.href = "/specialCreate"; 
               }
             }
           });

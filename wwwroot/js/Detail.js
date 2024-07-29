@@ -1,3 +1,8 @@
+function goBack(){
+  window.history.back();
+}
+
+
 function getIdFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
     result = urlParams.get("id");

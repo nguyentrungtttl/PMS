@@ -1,3 +1,7 @@
+function goBack(){
+  window.history.back();
+}
+
 const customSelect = document.querySelector(".custom-select");
 const selectBtn = document.querySelector(".select-button");
 const selectedValue = document.querySelector(".selected-value");
