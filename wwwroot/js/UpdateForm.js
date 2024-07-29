@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ===================== Display data from criteria =====================
   fetch(
-    `http://192.168.1.131:5034/api/room-type?hotelId=${sessionStorage.getItem(
+    `https://api2-pnv.bluejaypos.vn/api/room-type?hotelId=${sessionStorage.getItem(
       "hotelId"
     )}`
   )
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => {
       console.error("Error fetching cancel policies:", error);
     });
-  fetch("http://192.168.1.131:5034/api/payment-constraint")
+  fetch("https://api2-pnv.bluejaypos.vn/api/payment-constraint")
     .then((response) => response.json())
     .then((data) => {
       const payments = data.value;

@@ -31,7 +31,7 @@ function filter() {
     fetchRatePlans(filterCriteria);
     async function fetchRatePlans(filterCriteria) {
       try {
-        let url = `http://192.168.1.131:5034/api/rate-plan?hotelId=${filterCriteria.hotelId}&channelName=${
+        let url = `https://api2-pnv.bluejaypos.vn/api/rate-plan?hotelId=${filterCriteria.hotelId}&channelName=${
           filterCriteria.channelName
         }&roomTypeNames=${filterCriteria.roomType.join(
           ","

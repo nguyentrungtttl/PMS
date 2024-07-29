@@ -109,13 +109,13 @@ form.addEventListener("submit", async function(event){
 
 async function populateOptions(){
   try{//http://192.168.1.131:5034/api/room-type?hotelId=1
-    const roomType = await (await fetch(`http://api2-pnv.bluejaypos.vn/api/room-type?hotelId=${hotelId}`)).json() || "Room type"
+    const roomType = await (await fetch(`https://api2-pnv.bluejaypos.vn/api/room-type?hotelId=${hotelId}`)).json() || "Room type"
     console.log('roomType: ', roomType);
     const cancelPolicy = await (await fetch("https://api2-pnv.bluejaypos.vn/api/cancel-policy")).json() || "Room type"
     console.log('cancelPolicy: ', cancelPolicy);
-    const paymentContraint = await (await fetch("http://api2-pnv.bluejaypos.vn/api/payment-constraint")).json()
+    const paymentContraint = await (await fetch("https://api2-pnv.bluejaypos.vn/api/payment-constraint")).json()
     console.log('fetch paymentContraint: ', paymentContraint);
-    const additional = await (await fetch(`http://api2-pnv.bluejaypos.vn/api/additional?hotelId=${hotelId}`)).json()
+    const additional = await (await fetch(`https://api2-pnv.bluejaypos.vn/api/additional?hotelId=${hotelId}`)).json()
     populateDropdown("roomType", roomType);
     populateDropdown("cancelPolicy", cancelPolicy);
     populateDropdown("paymentContraint", paymentContraint);
