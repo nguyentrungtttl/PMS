@@ -16,18 +16,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/service-worker-registration.js"></script>
+  <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-messaging.js"></script>
+
 </head>
 
 <body>
     <div class="content-main">
         <div class="preivous">
-            <button onclick="goBack()">
-                <i class="fa-solid fa-arrow-left"></i>Previous
+            <button id="previous-button">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="title">Previous</span>
             </button>
         </div>
         <h1 class="create">Update</h1>
+        <h1 class="create">Update</h1>
         <h1>Rate Plan</h1>
-        <form class="form">
+        <form id="form" class="form">
             <div class="row">
                 <div class="col">
                     <label for="name"><b>Name*</b></label>
