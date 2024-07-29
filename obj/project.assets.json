@@ -5186,11 +5186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/user/Documents/PMS/HotelManagement.csproj",
+      "projectUniqueName": "/Users/user/Documents/Intern/PMS/HotelManagement.csproj",
       "projectName": "HotelManagement",
-      "projectPath": "/Users/user/Documents/PMS/HotelManagement.csproj",
+      "projectPath": "/Users/user/Documents/Intern/PMS/HotelManagement.csproj",
       "packagesPath": "/Users/user/.nuget/packages/",
-      "outputPath": "/Users/user/Documents/PMS/obj/",
+      "outputPath": "/Users/user/Documents/Intern/PMS/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/user/.nuget/NuGet/NuGet.Config"

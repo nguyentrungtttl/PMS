@@ -91,10 +91,18 @@ form.addEventListener("submit", async function(event){
     if (response.ok) {
       const responseData = await response.json();
       console.log("Rate plan created successfully:", responseData);
-      alert("Rate plan created successfully!");
-      window.location.href = "/home";
-    }
-    else{
+      
+      Swal.fire({
+        title: 'Success!',
+        text: "Rate plan created successfully!",
+        icon: 'success',
+        confirmButtonText: 'OK'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = "/home";
+        }
+      });
+    } else {
       console.error("Error creating rate plan:", response.statusText);
       alert("Error creating rate plan. Please try again.");
     }

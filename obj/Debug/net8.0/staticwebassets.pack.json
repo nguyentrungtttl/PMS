@@ -1,63 +1,63 @@
 {
   "Files": [
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/Calendar.css",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/css/Calendar.css",
       "PackagePath": "staticwebassets/css/Calendar.css"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/Detail.css",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/css/Detail.css",
       "PackagePath": "staticwebassets/css/Detail.css"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/GeneralForm.css",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/css/GeneralForm.css",
       "PackagePath": "staticwebassets/css/GeneralForm.css"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/Home.css",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/css/Home.css",
       "PackagePath": "staticwebassets/css/Home.css"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/SpecialCreate.css",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/css/SpecialCreate.css",
       "PackagePath": "staticwebassets/css/SpecialCreate.css"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/UpdateForm.css",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/css/UpdateForm.css",
       "PackagePath": "staticwebassets/css/UpdateForm.css"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/images/customer02.jpg",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/images/customer02.jpg",
       "PackagePath": "staticwebassets/images/customer02.jpg"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/images/logoPMS.png",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/images/logoPMS.png",
       "PackagePath": "staticwebassets/images/logoPMS.png"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/Calendar.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/Calendar.js",
       "PackagePath": "staticwebassets/js/Calendar.js"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/CreateForm.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/CreateForm.js",
       "PackagePath": "staticwebassets/js/CreateForm.js"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/Detail.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/Detail.js",
       "PackagePath": "staticwebassets/js/Detail.js"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/Home.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/Home.js",
       "PackagePath": "staticwebassets/js/Home.js"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/Login.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/Login.js",
       "PackagePath": "staticwebassets/js/Login.js"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/SpecialCreate.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/SpecialCreate.js",
       "PackagePath": "staticwebassets/js/SpecialCreate.js"
     },
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/js/UpdateForm.js",
+      "Id": "/Users/user/Documents/Intern/PMS/wwwroot/js/UpdateForm.js",
       "PackagePath": "staticwebassets/js/UpdateForm.js"
     },
     {
