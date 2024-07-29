@@ -9,31 +9,31 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelManagement
 build_property.RootNamespace = HotelManagement
-build_property.ProjectDir = /Users/user/Documents/PSM-system/
+build_property.ProjectDir = D:\3Light\PSM-system\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/user/Documents/PSM-system
+build_property.MSBuildProjectDirectory = D:\3Light\PSM-system
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/user/Documents/PSM-system/Views/CreateForm/CreateForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JlYXRlRm9ybS9DcmVhdGVGb3JtLmNzaHRtbA==
+[D:/3Light/PSM-system/Views/CreateForm/CreateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlRm9ybVxDcmVhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/PSM-system/Views/Detail/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGV0YWlsL0RldGFpbC5jc2h0bWw=
+[D:/3Light/PSM-system/Views/Detail/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/PSM-system/Views/Home/Home.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ib21lLmNzaHRtbA==
+[D:/3Light/PSM-system/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/PSM-system/Views/Login/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9naW4uY3NodG1s
+[D:/3Light/PSM-system/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/PSM-system/Views/Shared/Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0xheW91dC5jc2h0bWw=
+[D:/3Light/PSM-system/Views/Shared/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
