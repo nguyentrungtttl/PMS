@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelManagement
 build_property.RootNamespace = HotelManagement
-build_property.ProjectDir = /Users/user/Documents/Intern/PMS/
+build_property.ProjectDir = D:\final\PMS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/user/Documents/Intern/PMS
+build_property.MSBuildProjectDirectory = D:\final\PMS
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/user/Documents/Intern/PMS/Views/Calendar/Calendar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXIvQ2FsZW5kYXIuY3NodG1s
+[D:/final/PMS/Views/Calendar/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJcQ2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/CreateForm/CreateForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JlYXRlRm9ybS9DcmVhdGVGb3JtLmNzaHRtbA==
+[D:/final/PMS/Views/CreateForm/CreateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlRm9ybVxDcmVhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/Detail/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGV0YWlsL0RldGFpbC5jc2h0bWw=
+[D:/final/PMS/Views/Detail/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/Home/Home.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ib21lLmNzaHRtbA==
+[D:/final/PMS/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/Login/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9naW4uY3NodG1s
+[D:/final/PMS/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/Shared/Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0xheW91dC5jc2h0bWw=
+[D:/final/PMS/Views/Shared/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/SpecialCreate/SpecialCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3BlY2lhbENyZWF0ZS9TcGVjaWFsQ3JlYXRlLmNzaHRtbA==
+[D:/final/PMS/Views/SpecialCreate/SpecialCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbENyZWF0ZVxTcGVjaWFsQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/Documents/Intern/PMS/Views/UpdateForm/UpdateForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXBkYXRlRm9ybS9VcGRhdGVGb3JtLmNzaHRtbA==
+[D:/final/PMS/Views/UpdateForm/UpdateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBkYXRlRm9ybVxVcGRhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
