@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sYEm9D3rswRuxMpGDF/Snr2TAjIVY5p8tux0k2tuXa4=",
+  "Hash": "oIQsAZaxUmhB0mVWOLb02uzZWkpiuJO06MZOWkzrkTw=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "HotelManagement/wwwroot",
+      "Name": "HotelManagement\\wwwroot",
       "Source": "HotelManagement",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/css/Calendar.css",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\Calendar.css",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "css/Calendar.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Calendar.css"
+      "OriginalItemSpec": "wwwroot\\css\\Calendar.css"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/css/Detail.css",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\Detail.css",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "css/Detail.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Detail.css"
+      "OriginalItemSpec": "wwwroot\\css\\Detail.css"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/css/GeneralForm.css",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\GeneralForm.css",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "css/GeneralForm.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/GeneralForm.css"
+      "OriginalItemSpec": "wwwroot\\css\\GeneralForm.css"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/css/Home.css",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\Home.css",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "css/Home.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Home.css"
+      "OriginalItemSpec": "wwwroot\\css\\Home.css"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/css/SpecialCreate.css",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\SpecialCreate.css",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "css/SpecialCreate.css",
       "AssetKind": "All",
@@ -109,13 +109,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/SpecialCreate.css"
+      "OriginalItemSpec": "wwwroot\\css\\SpecialCreate.css"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/images/customer02.jpg",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\UpdateForm.css",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "css/UpdateForm.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\UpdateForm.css"
+    },
+    {
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\images\\customer02.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "images/customer02.jpg",
       "AssetKind": "All",
@@ -128,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/customer02.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\customer02.jpg"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/images/logoPMS.png",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\images\\logoPMS.png",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "images/logoPMS.png",
       "AssetKind": "All",
@@ -147,13 +166,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/logoPMS.png"
+      "OriginalItemSpec": "wwwroot\\images\\logoPMS.png"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/js/CreateForm.js",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\Calendar.js",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "js/Calendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Calendar.js"
+    },
+    {
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\CreateForm.js",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "js/CreateForm.js",
       "AssetKind": "All",
@@ -166,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/CreateForm.js"
+      "OriginalItemSpec": "wwwroot\\js\\CreateForm.js"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/js/Detail.js",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\Detail.js",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "js/Detail.js",
       "AssetKind": "All",
@@ -185,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Detail.js"
+      "OriginalItemSpec": "wwwroot\\js\\Detail.js"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/js/Home.js",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\Home.js",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "js/Home.js",
       "AssetKind": "All",
@@ -204,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Home.js"
+      "OriginalItemSpec": "wwwroot\\js\\Home.js"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/js/Login.js",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\Login.js",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "js/Login.js",
       "AssetKind": "All",
@@ -223,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Login.js"
+      "OriginalItemSpec": "wwwroot\\js\\Login.js"
     },
     {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/js/SpecialCreate.js",
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\SpecialCreate.js",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
       "BasePath": "_content/HotelManagement",
       "RelativePath": "js/SpecialCreate.js",
       "AssetKind": "All",
@@ -242,7 +280,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/SpecialCreate.js"
+      "OriginalItemSpec": "wwwroot\\js\\SpecialCreate.js"
+    },
+    {
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\UpdateForm.js",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "js/UpdateForm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\UpdateForm.js"
     }
   ]
 }
