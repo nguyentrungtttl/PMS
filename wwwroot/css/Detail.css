@@ -47,6 +47,7 @@
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .comeback button i {
   padding: 3px;
@@ -61,6 +62,7 @@
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .feature button i {
   padding: 3px;

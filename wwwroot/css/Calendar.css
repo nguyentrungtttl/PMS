@@ -20,6 +20,7 @@ body {
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
+    cursor: pointer;
   }
   .comeback button i {
     padding: 3px;

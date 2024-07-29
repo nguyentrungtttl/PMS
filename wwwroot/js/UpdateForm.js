@@ -43,6 +43,8 @@ messaging.onMessage((payload) => {
 
 
 selectBtn.addEventListener("click", (event) => {
+
+  
   event.preventDefault();
   customSelect.classList.toggle("active");
   selectBtn.setAttribute(

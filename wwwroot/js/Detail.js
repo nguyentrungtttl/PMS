@@ -2,13 +2,17 @@ function goBack(){
   window.history.back();
 }
 
-
 function getIdFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
-    result = urlParams.get("id");
-    console.log(result);
-    return result;
+    rateId = urlParams.get("id");
+    console.log("rateId", rateId);
+
+    sessionStorage.setItem('id', rateId);
+    console.log(rateId);
+    return rateId;
   }
+
+
   
   async function fetchData(result) {
     try {
