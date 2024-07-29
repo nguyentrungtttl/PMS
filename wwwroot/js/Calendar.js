@@ -305,7 +305,6 @@ function goBack(){
             if (clickCount % 2 !== 0) {
               dateStart = selectedDay;
               sessionStorage.setItem("startDate", dateStart);
-              alert(sessionStorage.getItem("startDate"));
               console.log("Ngày bắt đầu:", dateStart);
             } else {
               dateEnd = selectedDay;
@@ -454,3 +453,38 @@ function goBack(){
   
   
   
+  const firebaseConfig = {
+    apiKey: "AIzaSyBTL2NwrzkBLCM07CQcKwOQB6OFWueERUw",
+    authDomain: "bluejay-21878.firebaseapp.com",
+    projectId: "bluejay-21878",
+    storageBucket: "bluejay-21878.appspot.com",
+    messagingSenderId: "245314083295",
+    appId: "1:245314083295:web:819f166c0bbcdf0697cc6a",
+    measurementId: "G-4WSDT2EGKV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  // Get a reference to the database
+  const database = firebase.database();
+  
+  // Initialize Firebase Cloud Messaging
+  const messaging = firebase.messaging();
+  
+  // Request permission to send notifications
+  messaging.requestPermission().then(() => {
+    console.log('Notification permission granted.');
+    return messaging.getToken();
+  }).then((token) => {
+    console.log('FCM Token:', token);
+    // Save the token to your database
+    database.ref('fcmTokens').push({ token });
+  }).catch((error) => {
+    console.error('Unable to get permission to notify.', error);
+  });
+  
+  // Handle incoming messages
+  messaging.onMessage((payload) => {
+    console.log('Message received. ', payload);
+    alert('API Response Received: ' + payload.data.message);
+  });
