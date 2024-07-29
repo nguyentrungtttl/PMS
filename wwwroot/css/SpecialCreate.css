@@ -1,0 +1,168 @@
+/* ========== Google font ============ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"rel="stylesheet");
+* {
+  font-family: "Inter";
+}
+:root {
+  --blue-btn: #303f9f;
+  --white: #ffffff;
+  --pink: #fb347c;
+  --gray-border: #a3aed0;
+  --blue-text: #2b3674;
+}
+
+.container{
+  padding: 20px;
+}
+
+.previous-btn{
+  background-color: white;
+  color: black;
+  border: 1px solid var(--gray-border);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.previous-btn:hover{
+  background-color: #f2f2f2;
+}
+
+.titleContainer{
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+.form-container{
+  margin: 20px 20%;
+  /* background-color: red; */
+  overflow: hidden;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  /* background-color: blue; */
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+
+
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--blue-text);
+}
+
+.form-group .info, 
+.form-group input[type="number"],
+.form-group .multipleSelection{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-height: 3em;
+}
+
+
+
+.next-btn {
+  background-color: var(--blue-btn);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  /* display: block; */
+  /* width: 20%; */
+  font-size: 16px;
+  margin-top: 20px;
+  transition: font-weight background 0.3s;
+  position: relative;
+  top: 0px;
+
+}
+
+.next-btn:hover {
+  font-weight: bold;
+}
+
+/* Show dropdown when .show class is added */
+.show {
+  display: block;
+} */
+
+.multipleSelection { 
+  /* width: 800px;  */
+  background-color: #0edcb9; 
+  position: relative;
+}
+.selectBox { 
+  position: relative; 
+}
+
+.selectBox select { 
+  width: 100%; 
+  /* font-weight: bold;  */
+  border: none;
+  outline: none;    
+  appearance: none;
+  background: none;
+}
+
+.overSelect { 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 0; 
+  -color: red;
+
+}
+#checkBoxes { 
+  display: none; 
+  padding-top: 20px;
+  position: absolute;
+  z-index: 10;
+  margin-top: 15px;
+
+  background-color: white;
+  border: 1px #DEE2E6 solid; 
+  padding: 10px 10px 10px 10px;
+}
+#checkBoxes label { 
+  /* display: block;  */
+}
+#checkBoxes label:hover {
+  background-color: #e0e0e0; /* Hover effect */
+}
+
+
+#checkBoxes label:hover { 
+  /* background-color: #4F615E; color: white;  */
+}
