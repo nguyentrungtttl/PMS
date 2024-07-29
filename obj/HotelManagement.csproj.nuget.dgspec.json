@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/user/Documents/PSM-system/HotelManagement.csproj": {}
+    "/Users/user/Documents/PMS/HotelManagement.csproj": {}
   },
   "projects": {
-    "/Users/user/Documents/PSM-system/HotelManagement.csproj": {
+    "/Users/user/Documents/PMS/HotelManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/user/Documents/PSM-system/HotelManagement.csproj",
+        "projectUniqueName": "/Users/user/Documents/PMS/HotelManagement.csproj",
         "projectName": "HotelManagement",
-        "projectPath": "/Users/user/Documents/PSM-system/HotelManagement.csproj",
+        "projectPath": "/Users/user/Documents/PMS/HotelManagement.csproj",
         "packagesPath": "/Users/user/.nuget/packages/",
-        "outputPath": "/Users/user/Documents/PSM-system/obj/",
+        "outputPath": "/Users/user/Documents/PMS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/user/.nuget/NuGet/NuGet.Config"
