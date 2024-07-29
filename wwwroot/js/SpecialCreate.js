@@ -150,7 +150,7 @@ document.getElementById('submit').addEventListener('click', function() {
         icon: 'success',
         confirmButtonText: 'OK'
     })
-    .then(()=> window.location.href = 'https://api2-pnv.bluejaypos.vn/home' )
+    .then(()=> window.location.href = '/home' )
     ;
   })
 

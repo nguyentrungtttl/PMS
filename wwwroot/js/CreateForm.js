@@ -92,7 +92,7 @@ form.addEventListener("submit", async function(event){
       const responseData = await response.json();
       console.log("Rate plan created successfully:", responseData);
       alert("Rate plan created successfully!");
-      window.location.href = "https://api2-pnv.bluejaypos.vn/home";
+      window.location.href = "/home";
     }
     else{
       console.error("Error creating rate plan:", response.statusText);
