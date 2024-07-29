@@ -1,7 +1,9 @@
 let hotelId = sessionStorage.getItem("hotelId") || 1;
 console.log("hotelId", hotelId);
 
-
+function goBack(){
+  window.history.back();
+}
 
 document.addEventListener('DOMContentLoaded', async function(){
   await populateOptions();

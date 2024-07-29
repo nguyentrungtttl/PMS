@@ -4,6 +4,9 @@ const selectedValue = document.querySelector(".selected-value");
 const optionsList = document.querySelectorAll(".select-dropdown li");
 const selectedValues = [];
 
+function goBack(){
+  window.history.back();
+}
 
 const firebaseConfig = {
   apiKey: "AIzaSyBTL2NwrzkBLCM07CQcKwOQB6OFWueERUw",
