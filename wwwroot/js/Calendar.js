@@ -305,7 +305,6 @@ function goBack(){
             if (clickCount % 2 !== 0) {
               dateStart = selectedDay;
               sessionStorage.setItem("startDate", dateStart);
-              alert(sessionStorage.getItem("startDate"));
               console.log("Ngày bắt đầu:", dateStart);
             } else {
               dateEnd = selectedDay;
