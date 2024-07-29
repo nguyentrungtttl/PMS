@@ -17,6 +17,7 @@
   --gray-search-btn: #667085;
   --gray-detail: #f8f8f8;
   --gray-avaiable-room: #4d4d4d;
+  --gray-hover-btn: #e0e0e0;
   --red: #f60000;
   --purple: #6a1039;
   --white: #ffffff;
@@ -70,7 +71,7 @@ body {
 
 .navigation ul li:hover,
 .navigation ul li.hovered {
-  background-color: var(--blue-sidebav);
+  background-color: var(--gray-hover-btn);
 }
 
 
@@ -87,10 +88,6 @@ body {
   display: flex;
   text-decoration: none;
   /* color: var(--white); */
-}
-.navigation ul li:hover a,
-.navigation ul li.hovered a {
-  color: var(--blue);
 }
 
 
@@ -129,34 +126,6 @@ body {
   cursor: pointer;
 }
 
-
-/* --------- curve outside ---------- */
-.navigation ul li:hover a::before,
-.navigation ul li.hovered a::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -50px;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 35px 35px 0 10px var(--white);
-  pointer-events: none;
-}
-.navigation ul li:hover a::after,
-.navigation ul li.hovered a::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -50px;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 35px -35px 0 10px var(--white);
-  pointer-events: none;
-}
 /* ===================== Main ===================== */
 .main {
   position: absolute;
@@ -219,6 +188,7 @@ body {
   font-size: 18px;
   outline: none;
   border: 1px solid var(--black2);
+  cursor: pointer;
 }
 
 
@@ -262,6 +232,7 @@ body {
   margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 1040px;
+  cursor: pointer;
 }
 .createRate button i {
   margin-right: 5px;
@@ -276,6 +247,7 @@ body {
   padding: 10px;
   margin-top: 5px;
   margin-left: 1100px;
+  cursor: pointer;
 }
 .filterBtn button i {
   color: gray;
@@ -325,6 +297,7 @@ body {
   padding: 10px;
   background: var(--blue-btn-create);
   color: var(--white);
+  cursor: pointer;
 }
 .filter form .dropdown ul {
   list-style: none;
