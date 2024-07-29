@@ -30,36 +30,93 @@ function formatDate(date) {
 
 
 //get data
-let rateId = sessionStorage.getItem('rateId');
-let startDate = sessionStorage.getItem('startDate');
-
-console.log('startDate',startDate);
-const startDateElement = document.getElementById("date-start-info");
-startDateElement.textContent = formatDate(startDate);
-
-let endDate = sessionStorage.getItem('endDate');
-const endDateElement = document.getElementById("date-end-info");
-endDateElement.textContent = formatDate(endDate);
-
-console.log("startDate.textContent", startDate.textContent);
-async function getPrice() {
-  try {
-      const response = await fetch(`https://api2-pnv.bluejaypos.vn/api/rate-plan/${rateId}`);
-      const data = await response.json();
-      console.log('data', data);
-      let price =  data.ratePlans[0].ratePlan.price
-      console.log('price', price);
-      return price;
-      
-  } catch (error) {
-      console.error('Error fetching the data:', error);
-  }
+function formatDate(date) {
+    if (!date) return '';
+    const d = new Date(date);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
 
-const priceElement = document.getElementById("price")
-getPrice().then(price => {
-  priceElement.value = price;
-})
+document.addEventListener("DOMContentLoaded", function() {
+    // Retrieve the rateId, startDate, and endDate from sessionStorage
+    let rateId = sessionStorage.getItem('id');
+    console.log('rateId', rateId);
+
+    let startDate = sessionStorage.getItem('startDate');
+    console.log("startDate", startDate);
+
+    let endDate = sessionStorage.getItem('endDate');
+    console.log("endDate", endDate);
+
+    // Check if elements exist and set their content
+    const startDateElement = document.getElementById("date-start-info");
+    if (startDateElement) {
+        startDateElement.textContent = formatDate(startDate);
+    } else {
+        console.error("Element with id 'date-start-info' not found.");
+    }
+
+    const endDateElement = document.getElementById("date-end-info");
+    if (endDateElement) {
+        endDateElement.textContent = formatDate(endDate);
+    } else {
+        console.error("Element with id 'date-end-info' not found.");
+    }
+});
+
+// const priceElement = document.getElementById("price")
+// getPrice().then(price => {
+//   priceElement.value = price;
+// })
+
+async function getPrice() {
+    try {
+        const rateId = sessionStorage.getItem('id');
+        console.log('Fetching price for rateId:', rateId);
+        if (!rateId) {
+            throw new Error('rateId is null or undefined');
+        }
+        
+        const response = await fetch(`https://api2-pnv.bluejaypos.vn/api/rate-plan/${rateId}`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        console.log("Fetched data:", data);
+
+        if (!data.ratePlans || data.ratePlans.length === 0) {
+            throw new Error('No rate plans found in the response');
+        }
+
+        let price = data.ratePlans[0].ratePlan.price;
+        console.log("Parsed price:", price);
+        return price;
+    } catch (error) {
+        console.error("Error fetching the data:", error);
+        return null;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const priceElement = document.getElementById("price");
+    if (!priceElement) {
+        console.error("Element with id 'price' not found.");
+        return;
+    }
+
+    getPrice().then((price) => {
+        console.log("Fetched price:", price);
+        if (price !== null) {
+            priceElement.value = price;
+        } else {
+            priceElement.value = 'Error fetching price';
+        }
+    });
+});
+
 
 
 
