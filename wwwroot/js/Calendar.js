@@ -304,11 +304,12 @@ function goBack(){
             this.classList.add("selected");
             if (clickCount % 2 !== 0) {
               dateStart = selectedDay;
-              sessionStorage.setItem("dateStart", dateStart);
+              sessionStorage.setItem("startDate", dateStart);
+              alert(sessionStorage.getItem("startDate"));
               console.log("Ngày bắt đầu:", dateStart);
             } else {
               dateEnd = selectedDay;
-              sessionStorage.setItem("dateEnd", dateEnd);
+              sessionStorage.setItem("endDate", dateEnd);
               console.log("Ngày kết thúc:", dateEnd);
     
               // Kiểm tra nếu cả ngày bắt đầu và ngày kết thúc đã được chọn
