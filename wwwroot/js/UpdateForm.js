@@ -8,7 +8,16 @@ const selectedValue = document.querySelector(".selected-value");
 const optionsList = document.querySelectorAll(".select-dropdown li");
 const selectedValues = [];
 
+var rateId = sessionStorage.getItem("id");
+console.log("RateId", rateId);
+
+function goBack(){
+  window.location.href = `https://api2-pnv.bluejaypos.vn/detail?id=${rateId}`
+}
+
 selectBtn.addEventListener("click", (event) => {
+
+  
   event.preventDefault();
   customSelect.classList.toggle("active");
   selectBtn.setAttribute(
@@ -43,8 +52,7 @@ optionsList.forEach((option) => {
 // ============================= Handle API ===========================
 
 document.addEventListener("DOMContentLoaded", function () {
-  var rateId = sessionStorage.getItem("id");
-  console.log("RateId", rateId);
+
 
   // ===================== Display data from criteria =====================
   fetch(
