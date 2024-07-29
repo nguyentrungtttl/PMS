@@ -124,7 +124,7 @@ document.querySelectorAll('#checkBoxes input[type="checkbox"]').forEach(checkbox
 
 
 document.getElementById('submit').addEventListener('click', function() {
-  const url = 'http://192.168.1.131:5034/api/special/rate-plan';
+  const url = 'https://api2-pnv.bluejaypos.vn/api/special/rate-plan';
   const data = {
       "RatePlanId": rateId,
       "DayStart": startDate,

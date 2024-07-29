@@ -8,7 +8,7 @@ function getIdFromUrl() {
   async function fetchData(result) {
     try {
       const response = await fetch(
-        `http://192.168.1.131:5034/api/rate-plan/${result}`
+        `https://api2-pnv.bluejaypos.vn/api/rate-plan/${result}`
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
