@@ -37,3 +37,7 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/user/Documents/PMS/Views/Shared/Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/user/Documents/PMS/Views/SpecialCreate/SpecialCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3BlY2lhbENyZWF0ZS9TcGVjaWFsQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
