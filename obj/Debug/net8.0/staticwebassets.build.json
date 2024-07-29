@@ -8,7 +8,7 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "HotelManagement/wwwroot",
+      "Name": "HotelManagement\\wwwroot",
       "Source": "HotelManagement",
       "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
       "BasePath": "_content/HotelManagement",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Detail.css"
+      "OriginalItemSpec": "wwwroot\\css\\Detail.css"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/css/GeneralForm.css",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/GeneralForm.css"
+      "OriginalItemSpec": "wwwroot\\css\\GeneralForm.css"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/css/Home.css",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Home.css"
+      "OriginalItemSpec": "wwwroot\\css\\Home.css"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/images/customer02.jpg",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/customer02.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\customer02.jpg"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/images/logoPMS.png",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/logoPMS.png"
+      "OriginalItemSpec": "wwwroot\\images\\logoPMS.png"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/js/CreateForm.js",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/CreateForm.js"
+      "OriginalItemSpec": "wwwroot\\js\\CreateForm.js"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/js/Detail.js",
@@ -147,7 +147,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Detail.js"
+      "OriginalItemSpec": "wwwroot\\js\\Detail.js"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/js/Home.js",
@@ -166,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Home.js"
+      "OriginalItemSpec": "wwwroot\\js\\Home.js"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/js/Login.js",
@@ -185,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Login.js"
+      "OriginalItemSpec": "wwwroot\\js\\Login.js"
     }
   ]
 }
