@@ -1,12 +1,46 @@
-function goBack(){
-  window.history.back();
-}
-
 const customSelect = document.querySelector(".custom-select");
 const selectBtn = document.querySelector(".select-button");
 const selectedValue = document.querySelector(".selected-value");
 const optionsList = document.querySelectorAll(".select-dropdown li");
 const selectedValues = [];
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBTL2NwrzkBLCM07CQcKwOQB6OFWueERUw",
+  authDomain: "bluejay-21878.firebaseapp.com",
+  projectId: "bluejay-21878",
+  storageBucket: "bluejay-21878.appspot.com",
+  messagingSenderId: "245314083295",
+  appId: "1:245314083295:web:819f166c0bbcdf0697cc6a",
+  measurementId: "G-4WSDT2EGKV"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Get a reference to the database
+const database = firebase.database();
+
+// Initialize Firebase Cloud Messaging
+const messaging = firebase.messaging();
+
+// Request permission to send notifications
+messaging.requestPermission().then(() => {
+  console.log('Notification permission granted.');
+  return messaging.getToken();
+}).then((token) => {
+  console.log('FCM Token:', token);
+  // Save the token to your database
+  database.ref('fcmTokens').push({ token });
+}).catch((error) => {
+  console.error('Unable to get permission to notify.', error);
+});
+
+// Handle incoming messages
+messaging.onMessage((payload) => {
+  console.log('Message received. ', payload);
+  alert('API Response Received: ' + payload.data.message);
+});
+
 
 selectBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -42,13 +76,27 @@ optionsList.forEach((option) => {
 
 // ============================= Handle API ===========================
 
-document.addEventListener("DOMContentLoaded", function () {
+
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+  var serviceWorkerRegistration;
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('js/service-worker.js')
+    .then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+      serviceWorkerRegistration = registration;
+    }).catch(function(error) {
+      console.error('Service Worker registration failed:', error);
+    });
+  }
   var rateId = sessionStorage.getItem("id");
   console.log("RateId", rateId);
 
   // ===================== Display data from criteria =====================
   fetch(
-    `https://api2-pnv.bluejaypos.vn/api/room-type?hotelId=${sessionStorage.getItem(
+    `http://192.168.1.131:5034/api/room-type?hotelId=${sessionStorage.getItem(
       "hotelId"
     )}`
   )
@@ -72,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error fetching room types:", error);
     });
 
-  fetch("https://api2-pnv.bluejaypos.vn/api/cancel-policy")
+  fetch("http://192.168.1.131:5034/api/cancel-policy")
     .then((response) => response.json())
     .then((data) => {
       const cancelPolicies = data.value;
@@ -91,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => {
       console.error("Error fetching cancel policies:", error);
     });
-  fetch("https://api2-pnv.bluejaypos.vn/api/payment-constraint")
+  fetch("http://192.168.1.131:5034/api/payment-constraint")
     .then((response) => response.json())
     .then((data) => {
       const payments = data.value;
@@ -111,19 +159,24 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error fetching cancel policies:", error);
     });
 
+const previousButton = document.getElementById("previous-button");
+previousButton.addEventListener("click", ()=>{
+    window.location.href = `/detail?id=${sessionStorage.getItem("id")}`;
+})
   // ===================== Display data from RateId =====================
 
   let additionalNames = [];
-
+console.log("Prefetching");
   if (rateId) {
-    fetch(`https://api2-pnv.bluejaypos.vn/api/rate-plan/${rateId}`)
+    fetch(`http://192.168.1.131:5034/api/rate-plan/${rateId}`)
       .then((response) => response.json())
       .then((data) => {
+        console.log("data: ", data);
         const additional = data.ratePlans[0].additional;
         const additionalNames = additional.map((item) => item.name);
         console.log('additionalNames',additionalNames);
 
-        fetch("https://api2-pnv.bluejaypos.vn/api/additional")
+        fetch("http://192.168.1.131:5034/api/additional")
           .then((response) => response.json())
           .then((data) => {
             const additionals = data.value;
@@ -224,59 +277,99 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+
 // ================= Handle upadte =============
 form.addEventListener("submit", async function (event) {
+  console.log("submit click");
   event.preventDefault();
   console.log('successfull click ');
 
   const formData = new FormData(form);
   
   const rateId = sessionStorage.getItem("id");
-  console.log(rateId);
-
-
-  let objData = {
-    rateId: sessionStorage.getItem("id"),
-    // hotelId: sessionStorage.getItem("hotelId"),
-    channelId: sessionStorage.getItem("channelId"),
-    name: formData.get("name") || "",
-    price: formData.get("price") || "",
-    timeApplied: {
-      start: moment(formData.get("timeAppliedStart")).format() || "",
-      end: moment(formData.get("timeAppliedEnd")).format() || "",
-    },
-    occupancyLimit: formData.get("occupancyLimit") || "",
-    paymentConstraint: formData.get("paymentConstraint") || "",
-    roomTypeId: formData.get("roomType"),
-    cancelPolicyId: formData.get("cancelPolicy") || "",
-    status: formData.get("status") || "",
-    addtionalId: Array.from(formData.getAll("addtional")),
+  // console.log("Name:", formData.get("name") || "");
+  // console.log("Price:", formData.get("price") || "");
+  console.log("formGet: ", document.getElementById("dayStart").value);
+  console.log("DayStart:", document.getElementById("dayStart").value || "");
+  console.log("DayEnd:", document.getElementById("dayEnd").value || "");
+  console.log("OccupancyLimit:", formData.get("occupancyLimit") || "");
+  console.log("ChannelId:", sessionStorage.getItem("channelId"));
+  console.log("PaymentConstraintId:", formData.get("paymentConstraint") || "");
+  console.log("CancelPolicyId:", formData.get("cancelPolicy") || "");
+  console.log("RoomTypeId:", formData.get("roomType"));
+  console.log("AdditionalId:", Array.from(formData.getAll("addtional")));
+  var objData = {
+    "Id": rateId,
+    "Name": formData.get("name") || "",
+    "Price": formData.get("price") || "",
+    "DayStart": document.getElementById("dayStart").value || "",
+    "DayEnd": document.getElementById("dayEnd").value  || "",
+    "OccupancyLimit": formData.get("occupancyLimit") || "",
+    "ChannelId": sessionStorage.getItem("channelId"),
+    "PaymentConstraintId": formData.get("paymentConstraint") || "",
+    "CancelPolicyId": formData.get("cancelPolicy") || "",
+    "RoomTypeId": formData.get("roomType"),
+    "AdditionalId": [1,2],
   };
-  console.log("addtionalId:", objData.addtionalId);
+  console.log('objData', objData);
 
+
+  console.log('rateId', rateId);
+  Swal.fire({
+    title: 'Success!',
+    text: "New info updated. Synchronization is taking place",
+    icon: 'success',
+    confirmButtonText: 'OK'
+  })
   try {
-    let response = await fetch(
-      "https://api2-pnv.bluejaypos.vn/api/rate-plan/update",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(objData),
-      }
-    );
-
-    window.location.href = `/detail${sessionStorage.getItem("id")}`;
+    let response = await fetch("http://192.168.1.131:5034/api/rate-plan/update", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objData),
+    })
+    console.log('response', response);
 
     if (!response.ok) {
+      console.log("Not oke");
       let errorData = await response.json();
       throw new Error(`API Error: ${errorData.message || "Unknown error"}`);
     }
 
     let data = await response.json();
-    listRatePlan = data;
-    console.log("API Response:", data);
+    localStorage.setItem('apiResponse', JSON.stringify(data));
+
+    
   } catch (error) {
     console.error("Error fetching rate plans:", error);
+    Swal.fire({
+      title: 'Error!',
+      text: error.message,
+      icon: 'error',
+      confirmButtonText: 'OK'
+    });
   }
+  // window.location.href = `/detail?id=${sessionStorage.getItem("id")}`;
+
+  // sendMessageToServiceWorker({ type: 'CHECK_RESPONSE' });
+
+
+
 });
+
+
+setInterval(() => {
+  let response = localStorage.getItem('apiResponse');
+  console.log('checking sync');
+  if (response) {
+    Swal.fire({
+      title: 'Success!',
+      text: "New info synchronized successfully",
+      icon: 'success',
+      confirmButtonText: 'OK'
+    })
+    localStorage.removeItem('apiResponse'); // Clear the response once alerted
+  }
+}, 1000); 
