@@ -33,7 +33,7 @@ async function submitForm(event) {
   };
 
 
-  const response = await fetch("http://192.168.1.131:5034/api/login", {
+  const response = await fetch("https://api2-pnv.bluejaypos.vn/api/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
