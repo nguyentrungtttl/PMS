@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/user/Documents/PMS
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/user/Documents/PMS/Views/Calendar/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXIvQ2FsZW5kYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/user/Documents/PMS/Views/CreateForm/CreateForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3JlYXRlRm9ybS9DcmVhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
