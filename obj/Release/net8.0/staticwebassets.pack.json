@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PC\\HotelManagement\\wwwroot\\css\\Home.css",
+      "PackagePath": "staticwebassets\\css\\Home.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\HotelManagement\\wwwroot\\images\\customer02.jpg",
+      "PackagePath": "staticwebassets\\images\\customer02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\HotelManagement\\wwwroot\\images\\logoPMS.png",
+      "PackagePath": "staticwebassets\\images\\logoPMS.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\HotelManagement\\wwwroot\\js\\Home.js",
+      "PackagePath": "staticwebassets\\js\\Home.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\HotelManagement\\wwwroot\\js\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.HotelManagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.HotelManagement.props",
+      "PackagePath": "build\\HotelManagement.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HotelManagement.props",
+      "PackagePath": "buildMultiTargeting\\HotelManagement.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.HotelManagement.props",
+      "PackagePath": "buildTransitive\\HotelManagement.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

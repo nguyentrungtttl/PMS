@@ -1,0 +1,60 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="~/css/Home.css" />
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+
+
+</head>
+
+
+<body>
+    @* ======= Sidebav ======= *@
+    <div class="container">
+        <div class="navigation">
+            <div>
+                <ul>
+                    <li>
+                        <img src="~/images/logoPMS.png" alt="">
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon"> <i class="fa-solid fa-dollar-sign"></i> </span>
+                            <span class="title">Rate plan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/login" onclick="confirmLogout(event)">
+                            <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                            <span class="title">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        @* ==== Top Header ======= *@
+        <div class="topbar">
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+            <div class="user">
+                <img src="~/images/customer02.jpg" alt="">
+            </div>
+        </div>
+       
+         @RenderBody()
+        @* ==== Script ==== *@
+        <script src="~/js/Home.js"></script>
+</body>
+
+
+</html>
+
+

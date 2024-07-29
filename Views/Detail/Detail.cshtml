@@ -1,0 +1,58 @@
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="~/css/Detail.css" />
+</head>
+
+<body>
+    <div class="content-main">
+        <div class="comeback">
+            <button>
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="title">Previous</span>
+            </button>
+            <button>
+                <i class="fa-solid fa-arrow-right"></i>
+                <span class="title">Next</span>
+            </button>
+        </div>
+        <div class="feature">
+            <button class="advance-edit">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <span class="title">Advance edit</span>
+            </button>
+            <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+                <span class="title">Edit</span>
+            </button>
+            @* <button class="deactivate">
+                <i class="fa-solid fa-ban"></i>
+                <span class="title">Deactivate</span>
+            </button> *@
+        </div>
+        <div class="wrap">
+            <h3>Name</h3> <br>
+            <div class="content" id="productName">
+
+            </div>
+
+            <h3 class="h3Name">Description</h3><br>
+            <div class="content" id="productDetails">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="~/js/Detail.js"></script>
+</body>
+
+</html>

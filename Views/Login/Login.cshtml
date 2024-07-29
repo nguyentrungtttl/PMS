@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="~/js/Login.js"></script> 
+</head>
+<body>
+<div class="bg-neutral-300">
+ <section id="login" class="p-1 flex flex-col justify-center min-h-screen max-w-md mx-auto">   
+    <div class="flex justify-center mb-4">
+       <img src="~/images/logoPMS.png"
+       class="w-15 h-3.75 object-contain" alt="PMS_LOGO"  />
+   </div>
+   <div class="p-8 bg-white rounded-xl rounded-lg">
+       <div class="flex items-center justify-center text-2xl font-black m-3">       
+           <h1 class="tracking-wide">Login</h1>
+       </div>
+       <form onsubmit="submitForm(event)" class="flex flex-col justify-center">
+         <label class="text-sm font-medium">Email</label>
+         <input class="mb-1 mt-1 block w-full px-2 py-2.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+         focus:outline-none
+         focus:border-sky-500
+         focus:ring-1
+         focus:ring-sky-500
+         focus:invalid:border-red-500 focus:invalid:ring-red-500" type="text" id="email" name="email" placeholder="Enter your email" >
+         <p id="emailError" class="text-red-500 text-sm"></p>
+         <label style="margin-top: 10px;" class="text-sm font-medium">Password</label>
+         <div class="relative mb-3">
+           <input id="password" class="mb-1 mt-1 block w-full px-2 py-2.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+           focus:outline-none
+           focus:border-sky-500
+           focus:ring-1
+           focus:ring-sky-500
+           focus:invalid:border-red-500 focus:invalid:ring-red-500" type="password" name="password" placeholder="********" >
+           <span class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
+             <i id="togglePasswordIcon" class="fa fa-eye cursor-pointer" onclick="togglePassword()"></i>
+           </span>
+         </div>
+         <p id="passwordError" class="text-red-500 text-sm"></p>
+         <button style="margin-top: 20px;" type="submit" class="px-4 py-2.5 rounded-md shadow-lg bg-sky-600 font-medium text-gray-100 block hover:bg-sky-700 transition duration-300 ">
+           <span id="login_process_state" class="hidden">Checking ...</span>
+           <span id="login_default_state">Login</span></button>
+       </form>
+   </div>
+ </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+/* ========== Google font ============ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"rel="stylesheet");
+* {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue-sidebav: #110f45;
+  --blue-btn-create: #303f9f;
+  --blue-btn-form: #2b3674;
+  --blue-price-calender: #0875ff;
+  --green: #00b383;
+  --green-btn: #12B76A;
+  --gray-search: #e4e4e4;
+  --gray-search-btn: #667085;
+  --gray-detail: #f8f8f8;
+  --gray-avaiable-room: #4d4d4d;
+  --red: #f60000;
+  --purple: #6a1039;
+  --white: #ffffff;
+  --filter-hover: #5566d0;
+  --filter-border-btn: #e6e6e6;
+  --filter-bg: #d9d9d9;
+  --menu-li-hove: #344054;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+
+/* =============== Navigation ================ */
+.navigation {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: var(--white);
+  border-left: 10px solid var(--blue);
+  transition: 0.5s;
+  overflow: hidden;
+  border-right: 1px solid #dee2e6;
+}
+.navigation.active {
+  width: 80px;
+}
+
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--blue-sidebav);
+}
+
+
+.navigation ul li:nth-child(1) {
+  margin-bottom: 40px;
+  pointer-events: none;
+}
+
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  /* color: var(--white); */
+}
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+  color: var(--blue);
+}
+
+
+.navigation ul li a .icon i {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 75px;
+  text-align: center;
+  color: #091e42;
+  padding-bottom: 5px;
+  margin-left: 20px;
+}
+.navigation ul li a .icon ion-icon {
+  font-size: 1.75rem;
+}
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 1px;
+  margin-top: 5px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  color: #091e42;
+}
+.navigation ul li img {
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
+  width: 120px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+/* --------- curve outside ---------- */
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+}
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--white);
+  pointer-events: none;
+}
+/* ===================== Main ===================== */
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: var(--white);
+  transition: 0.5s;
+}
+.main.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+
+.search {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+}
+
+
+.search label {
+  position: relative;
+  width: 100%;
+}
+
+
+.search label input {
+  top: 100ps;
+  background: var(--gray-search);
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px 20px;
+  padding-left: 35px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid var(--black2);
+}
+
+
+.search label i.fa-solid.fa-magnifying-glass {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 1rem;
+  color: var(--gray-search-btn);
+}
+
+
+.user {
+  right: 90px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ========= Create button ======= */
+.createRate button {
+  background: var(--blue-btn-create);
+  color: var(--white);
+  weight: auto;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 1040px;
+}
+.createRate button i {
+  margin-right: 5px;
+}
+/* ========== Filter =========== */
+.filterBtn button {
+  background: var(--white);
+  weight: auto;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 1100px;
+}
+.filterBtn button i {
+  color: gray;
+  margin-right: 5px;
+}
+/* ======== Filter form ===== */
+.filter {
+  display: none;
+  position: fixed;
+  top: 210px;
+  right: 0;
+  transform: translate(-30%, -0%);
+  background-color: white;
+  z-index: 1000;
+}
+.modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+
+
+.show {
+  display: block;
+}
+.filter form {
+  width: 300px;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 15px;
+  background: var(--filter-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter form button {
+  weight: auto;
+  height: 40px;
+  margin-left: 5px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--blue-btn-create);
+  color: var(--white);
+}
+.filter form .dropdown ul {
+  list-style: none;
+  padding: 30px;
+}
+.filter form .dropdown ul .option {
+  width: 200px;
+  height: 30px;
+  background: var(--white);
+  border-radius: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.filter form .dropdown ul .option label {
+  padding: 5px;
+}
+.filter form .dropdown ul li {
+  margin-bottom: 10px;
+  margin: 5px;
+}
+
+
+/* ================== Order Details List ============== */
+.details {
+  position: relative;
+  width: 1800px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+}
+
+
+.details .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+
+.details .cardHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardHeader h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+.details table thead td {
+  font-weight: 600;
+}
+.details .recentOrders table tr {
+  color: var(--black1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .recentOrders table tr:last-child {
+  border-bottom: none;
+}
+/* .details .recentOrders table tbody tr:hover {
+  background: var(--blue);
+  color: var(--blue-btn-create);
+} */
+.details .recentOrders table tr td {
+  padding: 10px;
+}
+.details .recentOrders table tr td:last-child {
+  text-align: center;
+}
+.details .recentOrders table tr td:nth-child(2) {
+  text-align: center;
+}
+.details .recentOrders table tr td:nth-child(3) {
+  text-align: center;
+}
+
+
+th {
+  text-align:center;
+  padding: 10px;
+  height:50px;
+}
+
+
+td {
+  vertical-align: top;
+  height:60px;
+  text-align: center;
+}
+.status.return {
+  padding: 2px 4px;
+  background: var(--green-btn);
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.inProgress {
+  padding: 2px 4px;
+  background: #1795ce;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+a.navigate{
+  text-decoration: none;
+  color: inherit;
+}
+a.navigate:hover {
+  color: blue;
+}
+
