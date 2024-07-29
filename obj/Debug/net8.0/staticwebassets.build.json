@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "791OR1PYHvGaGLqCQSwSMlMJiNR/NoG7XTq1r32OC4I=",
+  "Hash": "RzUDaPqer5QJfhztKfoqD3n+Nq+qHU8ZoK8LjamvexU=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\Calendar.css",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "css/Calendar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Calendar.css"
+    },
     {
       "Identity": "D:\\3Light\\PSM-system\\wwwroot\\css\\Detail.css",
       "SourceId": "HotelManagement",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logoPMS.png"
+    },
+    {
+      "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\Calendar.js",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\3Light\\PSM-system\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "js/Calendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Calendar.js"
     },
     {
       "Identity": "D:\\3Light\\PSM-system\\wwwroot\\js\\CreateForm.js",

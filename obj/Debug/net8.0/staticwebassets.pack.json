@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\3Light\\PSM-system\\wwwroot\\css\\Calendar.css",
+      "PackagePath": "staticwebassets\\css\\Calendar.css"
+    },
+    {
       "Id": "D:\\3Light\\PSM-system\\wwwroot\\css\\Detail.css",
       "PackagePath": "staticwebassets\\css\\Detail.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "D:\\3Light\\PSM-system\\wwwroot\\images\\logoPMS.png",
       "PackagePath": "staticwebassets\\images\\logoPMS.png"
+    },
+    {
+      "Id": "D:\\3Light\\PSM-system\\wwwroot\\js\\Calendar.js",
+      "PackagePath": "staticwebassets\\js\\Calendar.js"
     },
     {
       "Id": "D:\\3Light\\PSM-system\\wwwroot\\js\\CreateForm.js",

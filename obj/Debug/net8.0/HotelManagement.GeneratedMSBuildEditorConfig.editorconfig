@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\3Light\PSM-system
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/3Light/PSM-system/Views/Calendar/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJcQ2FsZW5kYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/3Light/PSM-system/Views/CreateForm/CreateForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlRm9ybVxDcmVhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
