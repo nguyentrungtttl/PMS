@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/user/Documents/PMS/wwwroot/css/Calendar.css",
-      "PackagePath": "staticwebassets/css/Calendar.css"
-    },
-    {
       "Id": "/Users/user/Documents/PMS/wwwroot/css/Detail.css",
       "PackagePath": "staticwebassets/css/Detail.css"
     },
@@ -19,6 +15,10 @@
     {
       "Id": "/Users/user/Documents/PMS/wwwroot/css/SpecialCreate.css",
       "PackagePath": "staticwebassets/css/SpecialCreate.css"
+    },
+    {
+      "Id": "/Users/user/Documents/PMS/wwwroot/css/UpdateForm.css",
+      "PackagePath": "staticwebassets/css/UpdateForm.css"
     },
     {
       "Id": "/Users/user/Documents/PMS/wwwroot/images/customer02.jpg",
@@ -47,6 +47,10 @@
     {
       "Id": "/Users/user/Documents/PMS/wwwroot/js/SpecialCreate.js",
       "PackagePath": "staticwebassets/js/SpecialCreate.js"
+    },
+    {
+      "Id": "/Users/user/Documents/PMS/wwwroot/js/UpdateForm.js",
+      "PackagePath": "staticwebassets/js/UpdateForm.js"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.HotelManagement.Microsoft.AspNetCore.StaticWebAssets.props",

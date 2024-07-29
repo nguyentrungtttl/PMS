@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sYEm9D3rswRuxMpGDF/Snr2TAjIVY5p8tux0k2tuXa4=",
+  "Hash": "boVz1EJMVHwsbOfLToZD5yLhluh1UsXO/qexysKiM3c=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/Users/user/Documents/PMS/wwwroot/css/Calendar.css",
-      "SourceId": "HotelManagement",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
-      "BasePath": "_content/HotelManagement",
-      "RelativePath": "css/Calendar.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Calendar.css"
-    },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/css/Detail.css",
       "SourceId": "HotelManagement",
@@ -110,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/SpecialCreate.css"
+    },
+    {
+      "Identity": "/Users/user/Documents/PMS/wwwroot/css/UpdateForm.css",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "css/UpdateForm.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/UpdateForm.css"
     },
     {
       "Identity": "/Users/user/Documents/PMS/wwwroot/images/customer02.jpg",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/SpecialCreate.js"
+    },
+    {
+      "Identity": "/Users/user/Documents/PMS/wwwroot/js/UpdateForm.js",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/user/Documents/PMS/wwwroot/",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "js/UpdateForm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/UpdateForm.js"
     }
   ]
 }
