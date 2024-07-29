@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // ===================== Display data from criteria =====================
   fetch(
-    `http://192.168.1.131:5034/api/room-type?hotelId=${sessionStorage.getItem(
+    `https://api2-pnv.bluejaypos.vn/api/room-type?hotelId=${sessionStorage.getItem(
       "hotelId"
     )}`
   )
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       console.error("Error fetching room types:", error);
     });
 
-  fetch("http://192.168.1.131:5034/api/cancel-policy")
+  fetch("https://api2-pnv.bluejaypos.vn/api/cancel-policy")
     .then((response) => response.json())
     .then((data) => {
       const cancelPolicies = data.value;
@@ -141,7 +141,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     .catch((error) => {
       console.error("Error fetching cancel policies:", error);
     });
-  fetch("http://192.168.1.131:5034/api/payment-constraint")
+  fetch("https://api2-pnv.bluejaypos.vn/api/payment-constraint")
+  
     .then((response) => response.json())
     .then((data) => {
       const payments = data.value;
@@ -170,7 +171,7 @@ previousButton.addEventListener("click", ()=>{
   let additionalNames = [];
 console.log("Prefetching");
   if (rateId) {
-    fetch(`http://192.168.1.131:5034/api/rate-plan/${rateId}`)
+    fetch(`https://api2-pnv.bluejaypos.vn/api/rate-plan/${rateId}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("data: ", data);
@@ -178,7 +179,7 @@ console.log("Prefetching");
         const additionalNames = additional.map((item) => item.name);
         console.log('additionalNames',additionalNames);
 
-        fetch("http://192.168.1.131:5034/api/additional")
+        fetch("https://api2-pnv.bluejaypos.vn/api/additional")
           .then((response) => response.json())
           .then((data) => {
             const additionals = data.value;
@@ -325,7 +326,7 @@ form.addEventListener("submit", async function (event) {
     confirmButtonText: 'OK'
   })
   try {
-    let response = await fetch("http://192.168.1.131:5034/api/rate-plan/update", {
+    let response = await fetch("https://api2-pnv.bluejaypos.vn/api/rate-plan/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
