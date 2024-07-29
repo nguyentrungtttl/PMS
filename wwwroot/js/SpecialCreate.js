@@ -32,6 +32,8 @@ function formatDate(date) {
 //get data
 let rateId = sessionStorage.getItem('rateId');
 let startDate = sessionStorage.getItem('startDate');
+
+console.log('startDate',startDate);
 const startDateElement = document.getElementById("date-start-info");
 startDateElement.textContent = formatDate(startDate);
 
