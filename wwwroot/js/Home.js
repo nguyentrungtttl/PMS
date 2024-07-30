@@ -35,7 +35,8 @@ function filter() {
           filterCriteria.channelName
         }&roomTypeNames=${filterCriteria.roomType.join(
           ","
-        )}&timeAppliedStart=${encodeURIComponent(
+        )}&&status=${encodeURIComponent(filterCriteria.status)}
+        &timeAppliedStart=${encodeURIComponent(
           filterCriteria.timeApplied.start
         )}&timeAppliedEnd=${encodeURIComponent(filterCriteria.timeApplied.end)}`;
   
