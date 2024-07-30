@@ -238,7 +238,7 @@ getPrice().then((price) => {
     console.log("endDate", endDate);
     Swal.fire({
         title: 'Success!',
-        text:  'Special rate created. Synchronization is taking place',
+        text:  'Special-rate information is valid. Synchronization is taking place',
         icon: 'success',
         confirmButtonText: 'OK'
     })
@@ -251,38 +251,46 @@ getPrice().then((price) => {
     };
     console.log('Submitting data:', data);
   
-  
-    fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-     
+    try{
+        const response = await fetch(url,{
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+
+        if (response.ok){
+            const responseData = await response.json()
+            Swal.fire({
+                title: 'Success!',
+                text: "Special-rate created successfully!",
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then((result)=> {
+                if(result.isConfirmed) window.location.href = "/home";
+            })
+        }
+    
+        else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'There was an error submitting your information.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        } 
+    } catch {
         Swal.fire({
-            title: 'Success!',
-            text: "New info synchronized successfully",
-            icon: 'success',
+            title: 'Error!',
+            text: 'There was an error submitting your information.',
+            icon: 'error',
             confirmButtonText: 'OK'
-    })
-    .then(()=> window.location.href = '/home');
-    })
+        });
+    }
+   
   
-  
-    .catch((error) => {
-        console.error('Error:', error);
-        Swal.fire({
-          title: 'Error!',
-          text: 'There was an error submitting your data.',
-          icon: 'error',
-          confirmButtonText: 'OK'
-      });
-    });
-  });
+});
   
   
   

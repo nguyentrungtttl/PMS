@@ -93,7 +93,6 @@ form.addEventListener("submit", async function(event){
     if (response.ok) {
       const responseData = await response.json();
       console.log("Rate plan created successfully:", responseData);
-      
       Swal.fire({
         title: 'Success!',
         text: "Rate plan created successfully!",
