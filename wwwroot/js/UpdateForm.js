@@ -343,10 +343,12 @@ form.addEventListener("submit", async function (event) {
       let errorData = await response.json();
       throw new Error(`API Error: ${errorData.message || "Unknown error"}`);
     }
-
-    let data = await response.json();
-    localStorage.setItem('apiResponse', JSON.stringify(data));
-
+    else{
+      let data = await response.json();
+      console.log("data: ", data);
+      localStorage.setItem('apiResponse', JSON.stringify(data));
+      
+    }
     
   } catch (error) {
     console.error("Error fetching rate plans:", error);
