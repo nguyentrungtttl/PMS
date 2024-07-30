@@ -55,8 +55,8 @@ function goBack() {
  
     return data;
   }
-  const id = sessionStorage.getItem("id");
-  // const id = 21;
+  // const id = sessionStorage.getItem("id");
+  const id = 21;
   console.log("id", id);
   const url = `https://api2-pnv.bluejaypos.vn/api/rate-plan/${id}`;
   const convertedRatePlans = await fetchAndConvertRatePlans(url);
