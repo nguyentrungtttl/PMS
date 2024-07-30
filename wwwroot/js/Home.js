@@ -69,20 +69,19 @@ function filter() {
             let splitDayStart = plan.ratePlan.daystart.split("T")[0];
             let splitDayEnd = plan.ratePlan.dayEnd.split("T")[0];
             let row = document.createElement("tr");
-  
+           
+            console.log(plan.ratePlan.status );
   
             row.innerHTML = `
             <td><a href="/detail?id=${plan.ratePlan.id}" class="navigate">${
               plan.ratePlan.name
             }</a></td>
   
-  
+
               <td>${plan.ratePlan.roomType.name}</td>
               <td>
                 <span class="status  
-                  ${
-                    plan.ratePlan.status === "Activate" ? "Inactivate" : "return"
-                  }">
+                 ${plan.ratePlan.status ? "return" : "Inactivate"}">
                   ${plan.ratePlan.status === true ? "Active" : "Inactive"}
                 </span>
               </td>
