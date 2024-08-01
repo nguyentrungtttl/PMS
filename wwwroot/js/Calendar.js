@@ -1,9 +1,6 @@
-
-
 function goBack() {
   window.history.back();
 }
-
 
 (async function () {
   async function fetchAndConvertRatePlans(url) {
@@ -16,7 +13,7 @@ function goBack() {
       console.log("ratePlanObject", ratePlanObject);
       // Use the new convertRatePlans logic directly
       const convertedRatePlans = convertRatePlans(ratePlanObject);
-      
+
       console.log("data", convertedRatePlans);
       return convertedRatePlans;
     } catch (error) {
@@ -24,35 +21,39 @@ function goBack() {
       return null;
     }
   }
- 
+
   function convertRatePlans(input) {
     const ratePlans = input.ratePlans;
     const data = [];
- 
-    ratePlans.forEach(ratePlanObj => {
+
+    ratePlans.forEach((ratePlanObj) => {
       const ratePlan = ratePlanObj.ratePlan;
       const specialRatePlans = ratePlanObj.specialRatePlan;
- 
+
       const startDate = new Date(ratePlan.daystart);
       const endDate = new Date(ratePlan.dayEnd);
- 
-      for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
-        const day = d.toISOString().split('T')[0];
+
+      for (
+        let d = new Date(startDate);
+        d <= endDate;
+        d.setDate(d.getDate() + 1)
+      ) {
+        const day = d.toISOString().split("T")[0];
         let price = ratePlan.price;
- 
+
         // Check if there's a special rate plan for the current day
-        specialRatePlans.forEach(specialRatePlan => {
+        specialRatePlans.forEach((specialRatePlan) => {
           const specialStartDate = new Date(specialRatePlan.daystart);
           const specialEndDate = new Date(specialRatePlan.dayEnd);
           if (d >= specialStartDate && d <= specialEndDate) {
             price = specialRatePlan.specialPrice; // Use specialPrice instead of price
           }
         });
- 
+
         data.push({ day, price });
       }
     });
- 
+
     return data;
   }
   const id = sessionStorage.getItem("id");
@@ -60,13 +61,10 @@ function goBack() {
   console.log("id", id);
   const url = `https://api2-pnv.bluejaypos.vn/api/rate-plan/${id}`;
   const convertedRatePlans = await fetchAndConvertRatePlans(url);
- 
-
 
   // ===================
   !(function (data) {
     var today = moment();
-
 
     function Calendar(selector, events) {
       this.el = document.querySelector(selector);
@@ -82,7 +80,6 @@ function goBack() {
       }
     }
 
-
     Calendar.prototype.draw = function () {
       //Create Header
       this.drawHeader();
@@ -92,7 +89,6 @@ function goBack() {
       this.drawMonth();
     };
 
-
     Calendar.prototype.drawHeader = function () {
       var self = this;
       if (!this.header) {
@@ -100,21 +96,17 @@ function goBack() {
         this.header = createElement("div", "header");
         this.header.className = "header";
 
-
         this.title = createElement("h1");
-
 
         var right = createElement("div", "right");
         right.addEventListener("click", function () {
           self.nextMonth();
         });
 
-
         var left = createElement("div", "left");
         left.addEventListener("click", function () {
           self.prevMonth();
         });
-
 
         //Append the Elements
         this.header.appendChild(this.title);
@@ -122,7 +114,6 @@ function goBack() {
         this.header.appendChild(left);
         this.el.appendChild(this.header);
       }
-
 
       this.title.innerHTML = this.current.format("MMMM YYYY");
     };
@@ -132,9 +123,7 @@ function goBack() {
         this.dayName = createElement("div", "dayName");
         this.dayName.className = "dayName";
 
-
         const dayNames = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-
 
         dayNames.forEach((day) => {
           let daySpan = createElement("b");
@@ -142,24 +131,19 @@ function goBack() {
           this.dayName.appendChild(daySpan);
         });
 
-
         //Append the Elements
         this.el.appendChild(this.dayName);
       }
 
-
       this.title.innerHTML = this.current.format("MMMM YYYY");
     };
-
 
     Calendar.prototype.drawMonth = function () {
       var self = this;
 
-
       this.events.forEach(function (ev) {
         ev.date = self.current.clone().date(Math.random() * (29 - 1) + 1);
       });
-
 
       if (this.month) {
         this.oldMonth = this.month;
@@ -185,53 +169,42 @@ function goBack() {
       }
     };
 
-
     Calendar.prototype.backFill = function () {
-      console.log("data: ", data);
       var clone = this.current.clone();
       var dayOfWeek = clone.day();
-
 
       if (!dayOfWeek) {
         return;
       }
 
-
       clone.subtract("days", dayOfWeek + 1);
-
 
       for (var i = dayOfWeek; i > 0; i--) {
         this.drawDay(clone.add("days", 1));
       }
     };
 
-
     Calendar.prototype.fowardFill = function () {
       var clone = this.current.clone().add("months", 1).subtract("days", 1);
       var dayOfWeek = clone.day();
 
-
       if (dayOfWeek === 6) {
         return;
       }
-
 
       for (var i = dayOfWeek; i < 6; i++) {
         this.drawDay(clone.add("days", 1));
       }
     };
 
-
     Calendar.prototype.currentMonth = function () {
       var clone = this.current.clone();
-
 
       while (clone.month() === this.current.month()) {
         this.drawDay(clone);
         clone.add("days", 1);
       }
     };
-
 
     Calendar.prototype.getWeek = function (day) {
       if (!this.week || day.day() === 0) {
@@ -240,78 +213,59 @@ function goBack() {
       }
     };
 
-
     !(function () {
-      var clickCount = 0; // Biến để đếm số lần click
-      var dateStart, dateEnd; // Biến lưu ngày bắt đầu và ngày kết thúc
+      var clickCount = 0;
+      var dateStart, dateEnd;
 
-
-      // Hàm lấy màu tương ứng với vị trí trong khoảng thời gian đã chọn
-      function getColorInRange(dayIndex, totalDays) {
-        var hue = (dayIndex / totalDays) * 360;
-        return "hsl(" + hue + ", 100%, 50%)";
-      }
-      console.log("data: ", data);
-      //Print the room available of each days
       Calendar.prototype.drawDay = async function (day) {
-        console.log("check day:  ", day);
+
+        console.log("day",day);
         var self = this;
         this.getWeek(day);
-
 
         // Outer Day
         var outer = createElement("div", this.getDayClass(day));
 
-
         // Add data-day attribute
         outer.setAttribute("data-day", day.format("YYYY-MM-DD"));
 
-
-        // Available rooms and price
+       //Print room available of each days
         var avaiable = createElement("div", "avaiable");
 
-
-        // var dayData = data.find((d) => {
-        //   console.log(
-        //     `Comparing: ${moment(d.day).format("YYYY-MM-DD")} with ${moment(
-        //       day
-        //     ).format("YYYY-MM-DD")}`
-        //   );
-        //   return moment(d.day).isSame(day, "day");
-        // });
-
-
-        // var dayData = data.find((d) => moment(d.day).isSame(day, "day"));
-        // if (dayData) {
-        //   avaiable.innerHTML = `Available: <b>${dayData.roomAvailability}/${dayData.numberOfRoom}</b> rooms`;
-        //   var priceSpan = createElement("p");
-        //   // priceSpan.textContent = `Price: $${(dayData.price / 1000).toFixed(0)}K`;
-        //   // avaiable.appendChild(priceSpan);
-        // } else {
-        //   avaiable.innerHTML = "Available: <b>0/0</b> rooms";
-        // }
-
+        var dayData = data.find((d) => moment(d.day).isSame(day, "day"));
+        console.log("available dayData", dayData);
+        if (dayData) {
+          avaiable.innerHTML = `Available: <b>${dayData.roomAvailability}/${dayData.numberOfRoom}</b> rooms`;
+          var priceSpan = createElement("p");
+          // priceSpan.textContent = `Price: $${(dayData.price / 1000).toFixed(0)}K`;
+          // avaiable.appendChild(priceSpan);
+        } else {
+          avaiable.innerHTML = "Available: <b>0/0</b> rooms";
+        }
 
         // Day Number
         var number = createElement("div", "day-number", day.format("DD"));
 
-
         // Events
         var events = createElement("div", "day-events");
         this.drawEvents(day, events);
-
 
         outer.appendChild(avaiable);
         outer.appendChild(number);
         outer.appendChild(events);
         this.week.appendChild(outer);
 
+        const startDate = sessionStorage.getItem("startDate");
+        const endDate = sessionStorage.getItem("endDate");
+
+        console.log("startDate",startDate);
+        console.log("endDate",endDate);
 
         // Thêm sự kiện click vào ngày
         outer.addEventListener("click", function () {
           clickCount++;
-          var selectedDay = this.getAttribute("data-day");
-
+          // var selectedDay = this.getAttribute("data-day");
+          var selectedDay = moment(this.getAttribute("data-day")).format("YYYY-MM-DD");
 
           // Xóa lớp selected từ tất cả các ngày
           var allDays = document.querySelectorAll(".day");
@@ -319,88 +273,75 @@ function goBack() {
             day.classList.remove("selected");
           });
 
-
           // Thêm lớp selected vào cả ngày bắt đầu và ngày kết thúc
           this.classList.add("selected");
           if (clickCount % 2 !== 0) {
-            dateStart = selectedDay;
-            sessionStorage.setItem("startDate", dateStart);
-            console.log("Ngày bắt đầu:", dateStart);
+            if (startDate && endDate) {
+              const start = moment(startDate);
+              const end = moment(endDate);
+          
+              console.log("selectedDay choose", selectedDay);
+          
+              if (moment(selectedDay).isBetween(start, end, undefined, '[]')) { // Inclusive of start and end
+                console.log("Ngày nằm trong phạm vi.");
+                dateStart = selectedDay;
+                sessionStorage.setItem("startDate", dateStart);
+                console.log("Ngày bắt đầu:", dateStart);
+                // Perform actions when the day is within the range
+              } else {
+                console.log("Ngày không nằm trong phạm vi.");
+                // Optional: Provide feedback if the date is outside the range
+              }
+            }
           } else {
-            dateEnd = selectedDay;
-            sessionStorage.setItem("endDate", dateEnd);
-            console.log("Ngày kết thúc:", dateEnd);
-
-
+            if (startDate && endDate) {
+              const start = moment(startDate);
+              const end = moment(endDate);
+          
+              if (moment(selectedDay).isBetween(start, end, 'day', '[]')) { // Inclusive of start and end
+                console.log("Ngày nằm trong phạm vi.");
+                dateEnd = selectedDay;
+                sessionStorage.setItem("endDate", dateEnd);
+                console.log("Ngày kết thúc:", dateEnd);
+                // Perform actions when the day is within the range
+          
+                // Kiểm tra nếu ngày kết thúc nằm trước ngày bắt đầu
+                if (moment(dateEnd).isBefore(dateStart)) {
+                  alert("Ngày kết thúc không thể nằm trước ngày bắt đầu!");
+                  return; // Ngăn chặn hành động tiếp theo nếu có lỗi
+                }
+              } else {
+                console.log("Ngày không nằm trong phạm vi.");
+                // Optional: Provide feedback if the date is outside the range
+              }
+            }
+          
             // Kiểm tra nếu cả ngày bắt đầu và ngày kết thúc đã được chọn
             if (dateStart && dateEnd) {
-              // Đánh dấu tất cả các ngày trong khoảng thời gian đã chọn
-              // markDateRange(dateStart, dateEnd);
-              // Điều hướng đến trang createForm
               window.location.href = "/specialCreate";
             }
           }
+          
+
         });
       };
-      // Hàm để đánh dấu các ngày trong khoảng thời gian đã chọn
-      function markDateRange(start, end) {
-        var startDate = moment(start);
-        var endDate = moment(end);
-
-
-        var allDays = document.querySelectorAll(".day");
-
-
-        allDays.forEach(function (dayElement) {
-          var dayDate = moment(dayElement.getAttribute("data-day"));
-
-
-          // Kiểm tra nếu ngày nằm trong khoảng từ startDate đến endDate (bao gồm cả startDate và endDate)
-          if (
-            dayDate.isSameOrAfter(startDate, "day") &&
-            dayDate.isSameOrBefore(endDate, "day")
-          ) {
-            // Tô màu cho ngày trong khoảng
-            dayElement.style.backgroundColor = getColorInRange(
-              startDate.diff(dayDate, "days"),
-              endDate.diff(startDate, "days") + 1
-            );
-            dayElement.classList.add("in-range"); // Thêm lớp in-range
-          } else {
-            // Xóa lớp in-range và làm sạch màu nền cho các ngày không trong khoảng
-            dayElement.classList.remove("in-range");
-            dayElement.style.backgroundColor = ""; // Hoặc bạn có thể đặt màu nền mặc định nếu cần
-          }
-        });
-      }
-
-
-      // Hàm lấy màu theo khoảng cách ngày
-      function getColorInRange(daysDiffStart, totalDays) {
-        // Bạn có thể tùy chỉnh màu sắc ở đây dựa trên khoảng cách ngày
-        // Ví dụ: trả về màu xanh cho các ngày trong khoảng
-        return "lightblue";
-      }
     })();
-
 
     //Print the Price of Day
     Calendar.prototype.drawEvents = function (day, element) {
       var dayData = data.find((d) => moment(d.day).isSame(day, "day"));
       console.log("dayData", dayData);
-     
+
       var nhiSpan = document.createElement("p");
-     
+
       if (dayData && dayData.price !== undefined) {
         nhiSpan.textContent = `$${(dayData.price / 1000).toFixed(0)}`;
       } else {
         nhiSpan.textContent = "-";
       }
-     
+
       element.appendChild(nhiSpan);
     };
-   
-
 
     Calendar.prototype.getDayClass = function (day) {
       classes = ["day"];
@@ -412,13 +353,11 @@ function goBack() {
       return classes.join(" ");
     };
 
-
     Calendar.prototype.nextMonth = function () {
       this.current.add("months", 1);
       this.next = true;
       this.draw();
     };
-
 
     Calendar.prototype.prevMonth = function () {
       this.current.subtract("months", 1);
@@ -426,9 +365,7 @@ function goBack() {
       this.draw();
     };
 
-
     window.Calendar = Calendar;
-
 
     function createElement(tagName, className, innerText) {
       var ele = document.createElement(tagName);
@@ -441,7 +378,6 @@ function goBack() {
       return ele;
     }
   })(convertedRatePlans);
-
 
   !(function () {
     var data = [
@@ -458,12 +394,10 @@ function goBack() {
       },
       { eventName: "Dinner w/ Marketing", calendar: "Work", color: "orange" },
 
-
       { eventName: "Game vs Portalnd", calendar: "Sports", color: "blue" },
       { eventName: "Game vs Houston", calendar: "Sports", color: "blue" },
       { eventName: "Game vs Denver", calendar: "Sports", color: "blue" },
       { eventName: "Game vs San Degio", calendar: "Sports", color: "blue" },
-
 
       { eventName: "School Play", calendar: "Kids", color: "yellow" },
       {
@@ -478,21 +412,17 @@ function goBack() {
       },
       { eventName: "Ice Cream Night", calendar: "Kids", color: "yellow" },
 
-
       { eventName: "Free Tamale Night", calendar: "Other", color: "green" },
       { eventName: "Bowling Team", calendar: "Other", color: "green" },
       { eventName: "Teach Kids to Code", calendar: "Other", color: "green" },
       { eventName: "Startup Weekend", calendar: "Other", color: "green" },
     ];
 
-
     function addDate(ev) {}
-
 
     var calendar = new Calendar("#calendar", data);
   })();
 })();
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyBTL2NwrzkBLCM07CQcKwOQB6OFWueERUw",
@@ -506,14 +436,11 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-
 // Get a reference to the database
 const database = firebase.database();
 
-
 // Initialize Firebase Cloud Messaging
 const messaging = firebase.messaging();
-
 
 // Request permission to send notifications
 messaging
@@ -530,7 +457,6 @@ messaging
   .catch((error) => {
     console.error("Unable to get permission to notify.", error);
   });
-
 
 // Handle incoming messages
 messaging.onMessage((payload) => {

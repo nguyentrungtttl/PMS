@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\final\\PMS\\HotelManagement.csproj": {}
+    "D:\\Version03-PMS\\PMS\\HotelManagement.csproj": {}
   },
   "projects": {
-    "D:\\final\\PMS\\HotelManagement.csproj": {
+    "D:\\Version03-PMS\\PMS\\HotelManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\final\\PMS\\HotelManagement.csproj",
+        "projectUniqueName": "D:\\Version03-PMS\\PMS\\HotelManagement.csproj",
         "projectName": "HotelManagement",
-        "projectPath": "D:\\final\\PMS\\HotelManagement.csproj",
+        "projectPath": "D:\\Version03-PMS\\PMS\\HotelManagement.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\final\\PMS\\obj\\",
+        "outputPath": "D:\\Version03-PMS\\PMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
