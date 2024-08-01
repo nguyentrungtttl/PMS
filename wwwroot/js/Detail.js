@@ -1,5 +1,5 @@
-function goBack() {
-  window.location.href("/home");
+function goBack(){
+  window.location.href= "/home";
 }
 
 function getIdFromUrl() {

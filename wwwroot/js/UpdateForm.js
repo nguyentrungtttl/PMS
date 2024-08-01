@@ -323,8 +323,8 @@ form.addEventListener("submit", async function (event) {
 
   console.log('rateId', rateId);
   Swal.fire({
-    title: 'Success!',
-    text: "New info updated. Synchronization is taking place",
+    title: 'Submited!',
+    text: "Update information is valid. Synchronization is taking place",
     icon: 'success',
     confirmButtonText: 'OK'
   })
